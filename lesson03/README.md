@@ -10,7 +10,11 @@ docker build -t my-grunt-app .
 
 ビルドしたDockerfileを実行。実行しているDokcerに入る —rm：実行後ビルド削除。
 
-docker run  --rm --name my-running-app my-grunt-app
+ docker run -d  --name my-running-app my-grunt-app
+
+タスク実行後のファイル取得
+
+docker cp  <コンテナID>:/usr/src/app/styles.css styles.css
 
 ## Learning Text
 
