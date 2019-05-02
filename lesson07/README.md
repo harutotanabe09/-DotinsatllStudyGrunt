@@ -6,10 +6,6 @@ Gruntを始めるための環境構築
 
 Dockerfileをビルド。ビルド名：my-grunt-app
 
-docker stop $(docker ps -q)
-
-docker rm $(docker ps -q -a)
-
 docker build -t my-grunt-app .
 
 ビルドしたDockerfileを実行。実行しているDokcerに入る —rm：実行後ビルド削除。
