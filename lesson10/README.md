@@ -1,0 +1,21 @@
+## Docker Start Grunt
+
+Gruntを始めるための環境構築。less → css → 圧縮したCSS作成までのフロー登録。
+
+## How to Start
+
+Dockerfileをビルド。ビルド名：my-grunt-app
+
+docker build -t my-grunt-app .
+
+ビルドしたDockerfileを実行。実行しているDokcerに入る —rm：実行後ビルド削除。
+
+ docker run -d  --name my-running-app my-grunt-app
+
+タスク実行後のファイル取得
+
+docker cp  <コンテナID>:/usr/src/app/styles.min.css styles.min.css
+
+## Learning Text
+
+Grunt - Node.jsを利用したタスク自動化ツール
