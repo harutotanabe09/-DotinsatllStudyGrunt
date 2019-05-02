@@ -14,9 +14,7 @@ docker build -t my-grunt-app .
 
 タスク実行後のファイル取得
 
-docker cp  <コンテナID>:/usr/src/app/styles1.css styles1.css
-
-docker cp  <コンテナID>:/usr/src/app/styles2.css styles2.css:
+docker cp  <コンテナID>:/usr/src/app/styles.css styles.css
 
 ## Learning Text
 
